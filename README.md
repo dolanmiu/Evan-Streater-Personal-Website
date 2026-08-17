@@ -1,29 +1,37 @@
-This is a [Next.js](https://nextjs.org) personal website with [Builder.io](https://www.builder.io) headless CMS integration, deployed on [Vercel](https://vercel.com).
+This is the personal website of pianist Evan Streater, built with [Next.js](https://nextjs.org) (App Router, TypeScript, Tailwind CSS) and deployed on [Vercel](https://vercel.com).
 
-## Setup
-
-1. Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_BUILDER_API_KEY` to your Builder.io Public API Key (Account Settings > API Keys).
+## Development
 
 ```bash
-cp .env.example .env.local
-```
-
-2. Run the development server:
-
-```bash
+npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-## How it works
+## Scripts
 
-- `app/[[...page]]/page.tsx` is a catch-all route that fetches pages from Builder.io via `fetchOneEntry` and renders them with the `<Content />` component. Any URL path is looked up in Builder's `page` model, so pages built visually in Builder render live on the site.
+- `npm run dev` — start the development server
+- `npm run build` — production build
+- `npm run start` — serve the production build
+- `npm run lint` — run ESLint
+- `npm run typecheck` — run TypeScript type checking
+
+## Pages
+
+- `/` — Home
+- `/about` — Biography
+- `/concerts` — Upcoming & recent performances
+- `/recordings` — Discography
+- `/contact` — Booking inquiries
+
+Content is authored in code:
+
+- `lib/content.ts` — concerts and recordings data (edit this to update listings)
+- `app/*/page.tsx` — page copy and structure
 
 ## Deploy on Vercel
 
 1. Push this repo to GitHub.
 2. Import it in Vercel (Add New > Project).
-3. Add the `NEXT_PUBLIC_BUILDER_API_KEY` environment variable.
-4. Deploy.
-5. In Builder.io (Models > Page), set the Preview URL to your Vercel URL.
+3. Deploy. No environment variables required.
