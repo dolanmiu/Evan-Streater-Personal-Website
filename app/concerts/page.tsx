@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { concerts } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ const formatDate = (iso: string) =>
   });
 
 export default function ConcertsPage() {
-  const sorted = [...concerts].sort((a, b) => a.date.localeCompare(b.date));
+  const sorted = concerts.toSorted((a, b) => a.date.localeCompare(b.date));
 
   return (
     <>
@@ -44,13 +45,17 @@ export default function ConcertsPage() {
                 key={c.date + c.venue}
                 className="flex flex-col gap-3 border-t border-line py-8 md:flex-row md:items-baseline md:gap-8"
               >
-                <p className="w-56 shrink-0 text-sm text-muted">{formatDate(c.date)}</p>
+                <p className="w-56 shrink-0 text-sm text-muted">
+                  {formatDate(c.date)}
+                </p>
                 <div className="flex flex-col gap-1">
                   <h2 className="font-serif text-2xl">{c.program}</h2>
                   <p className="text-sm text-muted">
                     {c.venue} · {c.city}
                   </p>
-                  {c.note && <p className="mt-2 text-sm text-muted">{c.note}</p>}
+                  {c.note && (
+                    <p className="mt-2 text-sm text-muted">{c.note}</p>
+                  )}
                 </div>
               </div>
             ))}
@@ -64,12 +69,12 @@ export default function ConcertsPage() {
           <p className="max-w-xl leading-relaxed text-muted">
             For the most current schedule, venue changes, or to request a
             performance in your city,{" "}
-            <a
+            <Link
               href="/contact"
               className="text-accent transition-colors hover:text-foreground"
             >
               get in touch
-            </a>
+            </Link>
             .
           </p>
         </div>

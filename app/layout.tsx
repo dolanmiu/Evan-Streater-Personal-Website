@@ -28,7 +28,11 @@ export const metadata: Metadata = {
     "Evan Streater is a concert pianist performing solo recitals, chamber music, and collaborative programs with a focus on the expressive depth of the classical repertoire.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"

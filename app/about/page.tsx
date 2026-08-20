@@ -52,7 +52,8 @@ export default function AboutPage() {
               Since his debut, Evan has performed as soloist and chamber
               musician across North America and Europe, in venues ranging from
               intimate recital halls to major concert stages. He has appeared in
-              collaboration with string quartets, wind ensembles, and orchestras.
+              collaboration with string quartets, wind ensembles, and
+              orchestras.
             </p>
             <p>
               His programming is known for pairing canonical masterworks with
@@ -70,7 +71,8 @@ export default function AboutPage() {
             <p>
               &ldquo;The piano is a whole orchestra contained in a single
               instrument,&rdquo; Evan says. &ldquo;My aim is to make each line
-              sing, each harmony breathe, and each silence mean something.&rdquo;
+              sing, each harmony breathe, and each silence mean
+              something.&rdquo;
             </p>
             <p>
               He approaches every program as an act of curation — shaping

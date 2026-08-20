@@ -9,16 +9,28 @@ export function Footer() {
         </Link>
 
         <nav className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted">
-          <Link href="/about" className="transition-colors hover:text-foreground">
+          <Link
+            href="/about"
+            className="transition-colors hover:text-foreground"
+          >
             About
           </Link>
-          <Link href="/concerts" className="transition-colors hover:text-foreground">
+          <Link
+            href="/concerts"
+            className="transition-colors hover:text-foreground"
+          >
             Concerts
           </Link>
-          <Link href="/recordings" className="transition-colors hover:text-foreground">
+          <Link
+            href="/recordings"
+            className="transition-colors hover:text-foreground"
+          >
             Recordings
           </Link>
-          <Link href="/contact" className="transition-colors hover:text-foreground">
+          <Link
+            href="/contact"
+            className="transition-colors hover:text-foreground"
+          >
             Contact
           </Link>
         </nav>

@@ -39,7 +39,9 @@ export default function RecordingsPage() {
                   <p className="text-xs uppercase tracking-widest text-muted">
                     {rec.label} · {rec.year}
                   </p>
-                  <h2 className="font-serif text-2xl md:text-3xl">{rec.title}</h2>
+                  <h2 className="font-serif text-2xl md:text-3xl">
+                    {rec.title}
+                  </h2>
                   <p className="max-w-xl leading-relaxed text-muted">
                     {rec.blurb}
                   </p>

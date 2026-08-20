@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "import": ["@cspell/dict-en-au/cspell-ext.json"],
+  "language": "en-AU",
+  "words": [
+    "Adès",
+    "evenodd",
+    "Medtner",
+    "Merkin",
+    "opencode",
+    "oxfmt",
+    "Riverdale",
+    "Streater"
+  ],
+  "ignorePaths": [
+    ".git/**",
+    ".next/**",
+    ".claude/**",
+    ".agents/**",
+    "coverage/**",
+    "node_modules/**",
+    "next-env.d.ts",
+    ".opencode/**",
+    "package-lock.json",
+    "skills-lock.json",
+    "tsconfig.tsbuildinfo"
+  ]
+}

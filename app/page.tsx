@@ -10,7 +10,7 @@ function Kicker({ children }: { children: React.ReactNode }) {
 }
 
 export default function HomePage() {
-  const upcoming = [...concerts].sort((a, b) => a.date.localeCompare(b.date))[0];
+  const upcoming = concerts.toSorted((a, b) => a.date.localeCompare(b.date))[0];
 
   return (
     <>
@@ -54,7 +54,8 @@ export default function HomePage() {
               Evan Streater has appeared as soloist and chamber musician across
               North America and Europe, known for programs that balance
               canonical masterworks with living voices. His playing has been
-              praised for its warmth, architectural clarity, and quiet intensity.
+              praised for its warmth, architectural clarity, and quiet
+              intensity.
             </p>
             <Link
               href="/about"
@@ -108,7 +109,9 @@ export default function HomePage() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div className="flex flex-col gap-4">
               <Kicker>Recordings</Kicker>
-              <h2 className="font-serif text-3xl md:text-4xl">Selected discography</h2>
+              <h2 className="font-serif text-3xl md:text-4xl">
+                Selected discography
+              </h2>
             </div>
             <Link
               href="/recordings"
@@ -147,8 +150,8 @@ export default function HomePage() {
             Presenters, ensembles, and venues — let&apos;s talk.
           </h2>
           <p className="max-w-xl leading-relaxed text-muted">
-            For booking inquiries, collaborations, or private engagements,
-            reach out through the contact page.
+            For booking inquiries, collaborations, or private engagements, reach
+            out through the contact page.
           </p>
           <Link
             href="/contact"
