@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { youtubeUrl } from "@/lib/content";
+import { YouTubeIcon } from "@/components/YouTubeIcon";
 
 const links = [
   { href: "/", label: "Home" },
@@ -31,6 +33,15 @@ export function Nav() {
               {link.label}
             </Link>
           ))}
+          <a
+            href={youtubeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Evan Streater on YouTube"
+            className="transition-colors hover:text-foreground"
+          >
+            <YouTubeIcon />
+          </a>
         </nav>
 
         <button
@@ -62,6 +73,18 @@ export function Nav() {
                 </Link>
               </li>
             ))}
+            <li>
+              <a
+                href={youtubeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className="flex items-center gap-2 text-sm text-muted transition-colors hover:text-foreground"
+              >
+                <YouTubeIcon className="h-4 w-4" />
+                YouTube
+              </a>
+            </li>
           </ul>
         </nav>
       )}

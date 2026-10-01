@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { youtubeUrl } from "@/lib/content";
+import { YouTubeIcon } from "@/components/YouTubeIcon";
 
 export function Footer() {
   return (
@@ -33,6 +35,15 @@ export function Footer() {
           >
             Contact
           </Link>
+          <a
+            href={youtubeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Evan Streater on YouTube"
+            className="transition-colors hover:text-foreground"
+          >
+            <YouTubeIcon />
+          </a>
         </nav>
 
         <p className="text-xs text-muted">

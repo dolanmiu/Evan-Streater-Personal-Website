@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { concerts, recordings } from "@/lib/content";
+import { concerts, recordings, youtubeUrl } from "@/lib/content";
 
 describe("concerts", () => {
   it("lists at least one performance", () => {
@@ -24,5 +24,11 @@ describe("recordings", () => {
       expect(recording.label).toBeTruthy();
       expect(recording.year).toBeTruthy();
     }
+  });
+});
+
+describe("youtubeUrl", () => {
+  it("points to the YouTube channel", () => {
+    expect(youtubeUrl).toBe("https://www.youtube.com/@EvanStreater");
   });
 });

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { recordings } from "@/lib/content";
+import { recordings, youtubeUrl } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Recordings",
@@ -56,8 +56,16 @@ export default function RecordingsPage() {
       <section>
         <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
           <p className="max-w-xl leading-relaxed text-muted">
-            Recordings are available on major streaming platforms. Links to
-            stream or purchase will be added here.
+            Recordings are available on major streaming platforms. Watch
+            performances and recent releases on{" "}
+            <a
+              href={youtubeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent transition-colors hover:text-foreground"
+            >
+              YouTube →
+            </a>
           </p>
         </div>
       </section>

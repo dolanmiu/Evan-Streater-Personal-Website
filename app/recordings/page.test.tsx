@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import { recordings } from "@/lib/content";
+import { recordings, youtubeUrl } from "@/lib/content";
 import RecordingsPage from "./page";
 
 describe("RecordingsPage", () => {
@@ -36,5 +36,14 @@ describe("RecordingsPage", () => {
     expect(
       screen.getByText(/Recordings are available on major streaming platforms/i)
     ).toBeInTheDocument();
+  });
+
+  it("links to YouTube", () => {
+    render(<RecordingsPage />);
+
+    expect(screen.getByRole("link", { name: "YouTube →" })).toHaveAttribute(
+      "href",
+      youtubeUrl
+    );
   });
 });

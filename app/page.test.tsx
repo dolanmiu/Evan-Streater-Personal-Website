@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import HomePage from "./page";
+import { youtubeUrl } from "@/lib/content";
 
 type MockConcert = {
   date: string;
@@ -41,6 +42,9 @@ const recording: MockRecording = {
 
 const mockConcerts = vi.hoisted(() => ({ value: [] as MockConcert[] }));
 const mockRecordings = vi.hoisted(() => ({ value: [] as MockRecording[] }));
+const mockYoutubeUrl = vi.hoisted(() => ({
+  value: "https://www.youtube.com/@EvanStreater",
+}));
 
 vi.mock("@/lib/content", () => ({
   get concerts() {
@@ -48,6 +52,9 @@ vi.mock("@/lib/content", () => ({
   },
   get recordings() {
     return mockRecordings.value;
+  },
+  get youtubeUrl() {
+    return mockYoutubeUrl.value;
   },
 }));
 
@@ -136,6 +143,9 @@ describe("HomePage", () => {
     expect(
       screen.getByRole("link", { name: "All recordings →" })
     ).toHaveAttribute("href", "/recordings");
+    expect(
+      screen.getByRole("link", { name: "Watch on YouTube →" })
+    ).toHaveAttribute("href", youtubeUrl);
 
     const recording = mockRecordings.value[0];
     expect(

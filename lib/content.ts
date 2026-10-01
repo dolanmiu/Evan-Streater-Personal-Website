@@ -13,6 +13,8 @@ export type Recording = {
   blurb: string;
 };
 
+export const youtubeUrl = "https://www.youtube.com/@EvanStreater";
+
 export const concerts: Concert[] = [
   {
     date: "2026-09-27",

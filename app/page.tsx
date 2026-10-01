@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { concerts, recordings } from "@/lib/content";
+import { concerts, recordings, youtubeUrl } from "@/lib/content";
 
 function Kicker({ children }: { children: React.ReactNode }) {
   return (
@@ -113,12 +113,22 @@ export default function HomePage() {
                 Selected discography
               </h2>
             </div>
-            <Link
-              href="/recordings"
-              className="text-sm font-medium text-accent transition-colors hover:text-foreground"
-            >
-              All recordings →
-            </Link>
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+              <Link
+                href="/recordings"
+                className="text-sm font-medium text-accent transition-colors hover:text-foreground"
+              >
+                All recordings →
+              </Link>
+              <a
+                href={youtubeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-accent transition-colors hover:text-foreground"
+              >
+                Watch on YouTube →
+              </a>
+            </div>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {recordings.map((rec) => (
