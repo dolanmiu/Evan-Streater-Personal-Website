@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { concerts, recordings, youtubeUrl } from "@/lib/content";
+import { recordings, youtubeUrl } from "@/lib/content";
 
 function Kicker({ children }: { children: React.ReactNode }) {
   return (
@@ -10,8 +10,6 @@ function Kicker({ children }: { children: React.ReactNode }) {
 }
 
 export default function HomePage() {
-  const upcoming = concerts.toSorted((a, b) => a.date.localeCompare(b.date))[0];
-
   return (
     <>
       {/* Hero */}
@@ -30,7 +28,7 @@ export default function HomePage() {
               href="/concerts"
               className="border border-accent bg-accent px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-transparent hover:text-accent"
             >
-              Upcoming Concerts
+              Concerts
             </Link>
             <Link
               href="/contact"
@@ -48,14 +46,20 @@ export default function HomePage() {
           <Kicker>About</Kicker>
           <div className="flex flex-col gap-6">
             <h2 className="font-serif text-3xl leading-tight md:text-4xl">
-              A performer devoted to the full depth of the repertoire.
+              Music that belongs everywhere—and to everyone.
             </h2>
             <p className="leading-relaxed text-muted">
-              Evan Streater has appeared as soloist and chamber musician across
-              North America and Europe, known for programs that balance
-              canonical masterworks with living voices. His playing has been
-              praised for its warmth, architectural clarity, and quiet
-              intensity.
+              Evan Streater is a Sydney-based classical pianist who has appeared
+              as a soloist and chamber musician across North America, the United
+              Kingdom, and Australia. His performances balance canonical
+              masterworks with contemporary and living voices, shaped by a
+              belief that great music belongs in both the concert hall and
+              everyday life.
+            </p>
+            <p className="leading-relaxed text-muted">
+              Known for warmth, architectural clarity, and quiet intensity, Evan
+              creates programs that invite audiences into a closer, more
+              personal encounter with the music.
             </p>
             <Link
               href="/about"
@@ -67,41 +71,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Next performance */}
-      {upcoming && (
-        <section className="border-b border-line">
-          <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-20 md:py-28">
-            <Kicker>Next Performance</Kicker>
-            <div className="border border-line bg-surface p-8 md:p-12">
-              <p className="font-serif text-3xl leading-snug md:text-5xl">
-                {upcoming.program}
-              </p>
-              <p className="mt-4 text-lg text-muted">
-                {new Date(upcoming.date).toLocaleDateString("en-US", {
-                  weekday: "long",
-                  month: "long",
-                  day: "numeric",
-                  year: "numeric",
-                })}
-              </p>
-              <p className="text-lg text-muted">
-                {upcoming.venue} · {upcoming.city}
-              </p>
-              {upcoming.note && (
-                <p className="mt-6 max-w-xl leading-relaxed text-muted">
-                  {upcoming.note}
-                </p>
-              )}
-              <Link
-                href="/concerts"
-                className="mt-8 inline-block text-sm font-medium text-accent transition-colors hover:text-foreground"
-              >
-                View all concerts →
-              </Link>
-            </div>
+      {/* Concerts */}
+      <section className="border-b border-line">
+        <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-20 md:py-28">
+          <Kicker>Concerts</Kicker>
+          <div className="border border-line bg-surface p-8 md:p-12">
+            <p className="font-serif text-3xl leading-snug md:text-5xl">
+              Coming Soon
+            </p>
+            <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted">
+              New concert dates are on their way — check back soon.
+            </p>
+            <Link
+              href="/contact"
+              className="mt-8 inline-block text-sm font-medium text-accent transition-colors hover:text-foreground"
+            >
+              Get in touch →
+            </Link>
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
       {/* Recordings */}
       <section className="border-b border-line">

@@ -35,6 +35,12 @@ export function Footer() {
           >
             Contact
           </Link>
+          <Link
+            href="/lessons"
+            className="transition-colors hover:text-foreground"
+          >
+            Lessons
+          </Link>
           <a
             href={youtubeUrl}
             target="_blank"

@@ -11,6 +11,7 @@ const links = [
   { href: "/concerts", label: "Concerts" },
   { href: "/recordings", label: "Recordings" },
   { href: "/contact", label: "Contact" },
+  { href: "/lessons", label: "Lessons" },
 ];
 
 export function Nav() {

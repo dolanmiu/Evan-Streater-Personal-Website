@@ -48,24 +48,16 @@ export const concerts: Concert[] = [
 
 export const recordings: Recording[] = [
   {
-    title: "Études: Reflections",
-    label: "Independent Release",
-    year: "2026",
+    title: "A Year to Remember",
+    label: "Original Composition",
+    year: "Coming Soon",
     blurb:
-      "A recording of Chopin's Études paired with contemporary responses to the genre.",
+      "Three original piano pieces reflecting on moments from the past year.",
   },
   {
-    title: "Letters from the Keys",
-    label: "Arcadia Records",
-    year: "2025",
-    blurb:
-      "Intimate miniatures and character pieces tracing a private musical correspondence.",
-  },
-  {
-    title: "The Late Works",
-    label: "Meridian Classics",
-    year: "2024",
-    blurb:
-      "Late sonatas and late songs of Schubert in a program of quiet farewells.",
+    title: "24 Chopin Études",
+    label: "Studio Recording",
+    year: "Late 2027-2028",
+    blurb: "All twenty-four of Chopin's Études.",
   },
 ];

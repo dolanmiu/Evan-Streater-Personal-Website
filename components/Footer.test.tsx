@@ -12,6 +12,7 @@ describe("Footer", () => {
       ["Concerts", "/concerts"],
       ["Recordings", "/recordings"],
       ["Contact", "/contact"],
+      ["Lessons", "/lessons"],
     ]) {
       expect(screen.getByRole("link", { name: label })).toHaveAttribute(
         "href",
