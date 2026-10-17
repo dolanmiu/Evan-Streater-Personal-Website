@@ -44,13 +44,13 @@ export default function OriginalWorksPage() {
                 Coming Soon.
               </p>
             </div>
+            <Link
+              href="/contact"
+              className="border border-accent bg-accent px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-transparent hover:text-accent"
+            >
+              Purchase sheet music
+            </Link>
           </div>
-          <Link
-            href="/contact"
-            className="border border-accent bg-accent px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-transparent hover:text-accent"
-          >
-            Inquire about performances
-          </Link>
         </div>
       </section>
     </>

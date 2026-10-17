@@ -17,7 +17,7 @@ describe("OriginalWorksPage", () => {
     expect(screen.getByText(/Original compositions/i)).toBeInTheDocument();
     expect(screen.getByText(/A Year to Remember/i)).toBeInTheDocument();
     expect(
-      screen.getByRole("link", { name: "Inquire about performances" })
+      screen.getByRole("link", { name: "Purchase sheet music" })
     ).toHaveAttribute("href", "/contact");
   });
 });
