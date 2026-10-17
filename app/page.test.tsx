@@ -113,7 +113,7 @@ describe("HomePage", () => {
     expect(
       screen.getByRole("heading", {
         level: 2,
-        name: "Presenters, ensembles, and venues — let's talk.",
+        name: "Performance inquiries",
       })
     ).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Get in Touch" })).toHaveAttribute(

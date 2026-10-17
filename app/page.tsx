@@ -142,11 +142,11 @@ export default function HomePage() {
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-8 px-6 py-20 md:py-28">
           <Kicker>Engagement</Kicker>
           <h2 className="max-w-2xl font-serif text-3xl leading-tight md:text-4xl">
-            Presenters, ensembles, and venues — let&apos;s talk.
+            Performance inquiries
           </h2>
           <p className="max-w-xl leading-relaxed text-muted">
             For booking inquiries, collaborations, or private engagements, reach
-            out through the contact page.
+            out below.
           </p>
           <Link
             href="/contact"
