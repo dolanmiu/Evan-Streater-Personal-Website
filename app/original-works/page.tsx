@@ -24,9 +24,9 @@ export default function OriginalWorksPage() {
             Original Works
           </h1>
           <p className="max-w-xl leading-relaxed text-muted">
-            Original compositions for solo piano and small ensemble. Blending
-            classical craft with a contemporary, personal voice — often drawing
-            on memory, reflection, and narrative.
+            My original compositions are written for solo piano and small
+            ensemble. I blend classical craft with a contemporary, personal
+            voice — often drawing on memory, reflection, and narrative.
           </p>
         </div>
       </section>

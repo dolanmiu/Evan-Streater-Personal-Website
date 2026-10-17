@@ -14,7 +14,7 @@ describe("OriginalWorksPage", () => {
   it("describes original compositions", () => {
     render(<OriginalWorksPage />);
 
-    expect(screen.getByText(/Original compositions/i)).toBeInTheDocument();
+    expect(screen.getByText(/I blend classical craft/i)).toBeInTheDocument();
     expect(screen.getByText(/A Year to Remember/i)).toBeInTheDocument();
     expect(
       screen.getByRole("link", { name: "Purchase sheet music" })
