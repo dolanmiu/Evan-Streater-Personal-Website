@@ -67,27 +67,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Concerts */}
-      <section className="border-b border-line">
-        <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-20 md:py-28">
-          <Kicker>Concerts</Kicker>
-          <div className="border border-line bg-surface p-8 md:p-12">
-            <p className="font-serif text-3xl leading-snug md:text-5xl">
-              Coming Soon
-            </p>
-            <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted">
-              New concert dates are on their way — check back soon.
-            </p>
-            <Link
-              href="/contact"
-              className="mt-8 inline-block text-sm font-medium text-accent transition-colors hover:text-foreground"
-            >
-              Get in touch →
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Recordings */}
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
@@ -154,6 +133,27 @@ export default function HomePage() {
           >
             Get in Touch
           </Link>
+        </div>
+      </section>
+
+      {/* Concerts */}
+      <section className="border-b border-line">
+        <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-20 md:py-28">
+          <Kicker>Concerts</Kicker>
+          <div className="border border-line bg-surface p-8 md:p-12">
+            <p className="font-serif text-3xl leading-snug md:text-5xl">
+              Coming Soon
+            </p>
+            <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted">
+              New concert dates are on their way — check back soon.
+            </p>
+            <Link
+              href="/contact"
+              className="mt-8 inline-block text-sm font-medium text-accent transition-colors hover:text-foreground"
+            >
+              Get in touch →
+            </Link>
+          </div>
         </div>
       </section>
     </>
