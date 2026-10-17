@@ -19,10 +19,6 @@ export default function HomePage() {
           <h1 className="font-serif text-5xl leading-[1.05] tracking-tight md:text-7xl">
             Evan Streater
           </h1>
-          <p className="max-w-xl text-lg leading-relaxed text-muted">
-            Performing with expressive depth and clarity — from the great
-            Classical and Romantic masters to the composers of our own time.
-          </p>
           <div className="flex flex-wrap gap-4">
             <Link
               href="/lessons"
