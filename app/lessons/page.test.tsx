@@ -12,6 +12,25 @@ describe("LessonsPage", () => {
     ).toBeInTheDocument();
   });
 
+  it("includes the Cal.com booking script and trigger button", () => {
+    render(<LessonsPage />);
+
+    const bookButton = screen.getByRole("button", {
+      name: "Book a Lesson Online",
+    });
+    expect(bookButton).toHaveAttribute("data-cal-link", "evanstreater/lesson");
+    expect(bookButton).toHaveAttribute("data-cal-namespace", "lesson");
+    expect(bookButton).toHaveAttribute(
+      "data-cal-config",
+      '{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+    );
+
+    const calScript = Array.from(document.querySelectorAll("script")).find(
+      (s) => s.textContent?.includes("Cal(")
+    );
+    expect(calScript).toBeTruthy();
+  });
+
   it("links the overview cards to the single and bundle sections", () => {
     render(<LessonsPage />);
 

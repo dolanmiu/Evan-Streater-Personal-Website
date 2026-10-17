@@ -18,6 +18,12 @@ function Kicker({ children }: { children: React.ReactNode }) {
 export default function LessonsPage() {
   return (
     <>
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init"); Cal("init", "lesson", {origin:"https://app.cal.com"}); Cal.config = Cal.config || {}; Cal.config.forwardQueryParams = true; Cal.ns.lesson("ui", {"hideEventTypeDetails":false,"layout":"month_view"});`,
+        }}
+      />
       <section className="border-b border-line">
         <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-20 md:py-28">
           <Kicker>Lessons</Kicker>
@@ -28,6 +34,14 @@ export default function LessonsPage() {
             One-on-one lessons for pianists who want a fresh perspective — on
             technique, repertoire, or interpretation.
           </p>
+          <button
+            data-cal-link="evanstreater/lesson"
+            data-cal-namespace="lesson"
+            data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+            className="border border-accent bg-accent px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-transparent hover:text-accent mt-4 md:mt-0"
+          >
+            Book a Lesson Online
+          </button>
         </div>
       </section>
 
