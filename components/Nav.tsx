@@ -6,12 +6,12 @@ import { youtubeUrl } from "@/lib/content";
 import { YouTubeIcon } from "@/components/YouTubeIcon";
 
 const links = [
-  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/concerts", label: "Concerts" },
   { href: "/recordings", label: "Recordings" },
   { href: "/contact", label: "Contact" },
   { href: "/lessons", label: "Lessons" },
+  { href: "/accompaniment", label: "Accompaniment" },
 ];
 
 export function Nav() {

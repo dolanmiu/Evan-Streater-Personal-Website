@@ -5,12 +5,12 @@ import { Nav } from "./Nav";
 import { youtubeUrl } from "@/lib/content";
 
 const links = [
-  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/concerts", label: "Concerts" },
   { href: "/recordings", label: "Recordings" },
   { href: "/contact", label: "Contact" },
   { href: "/lessons", label: "Lessons" },
+  { href: "/accompaniment", label: "Accompaniment" },
 ];
 
 describe("Nav", () => {
@@ -33,13 +33,13 @@ describe("Nav", () => {
     render(<Nav />);
 
     const toggle = screen.getByRole("button", { name: "Toggle menu" });
-    expect(screen.getAllByRole("link", { name: "Home" })).toHaveLength(1);
+    expect(screen.getAllByRole("link", { name: "About" })).toHaveLength(1);
 
     await user.click(toggle);
-    expect(screen.getAllByRole("link", { name: "Home" })).toHaveLength(2);
+    expect(screen.getAllByRole("link", { name: "About" })).toHaveLength(2);
 
-    await user.click(screen.getAllByRole("link", { name: "Home" })[1]);
-    expect(screen.getAllByRole("link", { name: "Home" })).toHaveLength(1);
+    await user.click(screen.getAllByRole("link", { name: "About" })[1]);
+    expect(screen.getAllByRole("link", { name: "About" })).toHaveLength(1);
   });
 
   it("links to YouTube on desktop and in the mobile menu", async () => {
@@ -59,6 +59,6 @@ describe("Nav", () => {
     expect(mobileLink).toHaveAttribute("target", "_blank");
 
     await user.click(mobileLink);
-    expect(screen.getAllByRole("link", { name: "Home" })).toHaveLength(1);
+    expect(screen.getAllByRole("link", { name: "About" })).toHaveLength(1);
   });
 });
