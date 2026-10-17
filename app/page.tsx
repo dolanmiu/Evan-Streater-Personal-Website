@@ -36,37 +36,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About preview */}
-      <section className="border-b border-line">
-        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-[1fr_2fr] md:py-28">
-          <Kicker>About</Kicker>
-          <div className="flex flex-col gap-6">
-            <h2 className="font-serif text-3xl leading-tight md:text-4xl">
-              Music that belongs everywhere—and to everyone.
-            </h2>
-            <p className="leading-relaxed text-muted">
-              Evan Streater is a Sydney-based classical pianist who has appeared
-              as a soloist and chamber musician across North America, the United
-              Kingdom, and Australia. His performances balance canonical
-              masterworks with contemporary and living voices, shaped by a
-              belief that great music belongs in both the concert hall and
-              everyday life.
-            </p>
-            <p className="leading-relaxed text-muted">
-              Known for warmth, architectural clarity, and quiet intensity, Evan
-              creates programs that invite audiences into a closer, more
-              personal encounter with the music.
-            </p>
-            <Link
-              href="/about"
-              className="text-sm font-medium text-accent transition-colors hover:text-foreground"
-            >
-              Read the full biography →
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Recordings */}
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">

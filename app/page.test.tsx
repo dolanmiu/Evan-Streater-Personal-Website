@@ -54,23 +54,6 @@ describe("HomePage", () => {
     ).toHaveAttribute("href", "/contact");
   });
 
-  it("renders the about preview", () => {
-    render(<HomePage />);
-
-    expect(
-      screen.getByRole("heading", {
-        level: 2,
-        name: "Music that belongs everywhere—and to everyone.",
-      })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByText(/Sydney-based classical pianist/i)
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("link", { name: "Read the full biography →" })
-    ).toHaveAttribute("href", "/about");
-  });
-
   it("shows coming soon for concerts", () => {
     render(<HomePage />);
 
