@@ -45,9 +45,9 @@ describe("HomePage", () => {
     expect(
       screen.getByRole("heading", { level: 1, name: "Evan Streater" })
     ).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "Concerts" })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: "Book a Lesson" })).toHaveAttribute(
       "href",
-      "/concerts"
+      "/lessons"
     );
     expect(
       screen.getByRole("link", { name: "Book a Performance" })

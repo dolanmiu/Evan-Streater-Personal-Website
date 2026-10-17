@@ -25,10 +25,10 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
-              href="/concerts"
+              href="/lessons"
               className="border border-accent bg-accent px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-transparent hover:text-accent"
             >
-              Concerts
+              Book a Lesson
             </Link>
             <Link
               href="/contact"
