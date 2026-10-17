@@ -39,7 +39,9 @@ describe("HomePage", () => {
   it("renders the hero section with calls to action", () => {
     render(<HomePage />);
 
-    expect(screen.getByText("Concert Pianist")).toBeInTheDocument();
+    expect(
+      screen.getByText("Concert Pianist · Collaborator · Composer")
+    ).toBeInTheDocument();
     expect(
       screen.getByRole("heading", { level: 1, name: "Evan Streater" })
     ).toBeInTheDocument();

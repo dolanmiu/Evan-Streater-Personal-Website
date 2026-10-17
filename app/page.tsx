@@ -15,7 +15,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="border-b border-line">
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-8 px-6 py-24 md:py-36">
-          <Kicker>Concert Pianist</Kicker>
+          <Kicker>Concert Pianist · Collaborator · Composer</Kicker>
           <h1 className="font-serif text-5xl leading-[1.05] tracking-tight md:text-7xl">
             Evan Streater
           </h1>
