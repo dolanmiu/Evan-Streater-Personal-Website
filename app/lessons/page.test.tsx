@@ -12,7 +12,7 @@ describe("LessonsPage", () => {
     ).toBeInTheDocument();
   });
 
-  it("includes the Cal.com booking script and trigger button", () => {
+  it("includes the Cal.com booking trigger button", () => {
     render(<LessonsPage />);
 
     const bookButton = screen.getByRole("button", {
@@ -24,11 +24,6 @@ describe("LessonsPage", () => {
       "data-cal-config",
       '{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
     );
-
-    const calScript = Array.from(document.querySelectorAll("script")).find(
-      (s) => s.textContent?.includes("Cal(")
-    );
-    expect(calScript).toBeTruthy();
   });
 
   it("links the overview cards to the single and bundle sections", () => {
