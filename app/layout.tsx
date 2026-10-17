@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s — Evan Streater",
   },
   description:
-    "Evan Streater is a concert pianist performing solo recitals, chamber music, and collaborative programs with a focus on the expressive depth of the classical repertoire.",
+    "Evan Streater is a pianist performing solo recitals, chamber music, and collaborative programs with a focus on the expressive depth of the classical repertoire.",
 };
 
 export default function RootLayout({

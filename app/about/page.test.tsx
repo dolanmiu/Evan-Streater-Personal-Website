@@ -9,7 +9,7 @@ describe("AboutPage", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "Concert Pianist, Collaborator, Composer",
+        name: "Pianist, Collaborator, Composer",
       })
     ).toBeInTheDocument();
 

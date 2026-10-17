@@ -40,7 +40,7 @@ describe("HomePage", () => {
     render(<HomePage />);
 
     expect(
-      screen.getByText("Concert Pianist · Collaborator · Composer")
+      screen.getByText("Pianist · Collaborator · Composer")
     ).toBeInTheDocument();
     expect(
       screen.getByRole("heading", { level: 1, name: "Evan Streater" })

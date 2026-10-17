@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Biography of concert pianist Evan Streater.",
+  description: "Biography of pianist Evan Streater.",
 };
 
 function Kicker({ children }: { children: React.ReactNode }) {
@@ -20,7 +20,7 @@ export default function AboutPage() {
         <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-20 md:py-28">
           <Kicker>Biography</Kicker>
           <h1 className="max-w-3xl font-serif text-4xl leading-tight md:text-5xl">
-            Concert Pianist, Collaborator, Composer
+            Pianist, Collaborator, Composer
           </h1>
         </div>
       </section>
