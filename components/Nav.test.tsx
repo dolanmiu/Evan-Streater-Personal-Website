@@ -7,10 +7,11 @@ import { youtubeUrl } from "@/lib/content";
 const links = [
   { href: "/about", label: "About" },
   { href: "/concerts", label: "Concerts" },
+  { href: "/original-works", label: "Original Works" },
   { href: "/recordings", label: "Recordings" },
-  { href: "/contact", label: "Contact" },
   { href: "/lessons", label: "Lessons" },
   { href: "/accompaniment", label: "Accompaniment" },
+  { href: "/contact", label: "Contact" },
 ];
 
 describe("Nav", () => {

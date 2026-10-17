@@ -24,22 +24,34 @@ export function Footer() {
             Concerts
           </Link>
           <Link
+            href="/original-works"
+            className="transition-colors hover:text-foreground"
+          >
+            Original Works
+          </Link>
+          <Link
             href="/recordings"
             className="transition-colors hover:text-foreground"
           >
             Recordings
           </Link>
           <Link
-            href="/contact"
-            className="transition-colors hover:text-foreground"
-          >
-            Contact
-          </Link>
-          <Link
             href="/lessons"
             className="transition-colors hover:text-foreground"
           >
             Lessons
+          </Link>
+          <Link
+            href="/accompaniment"
+            className="transition-colors hover:text-foreground"
+          >
+            Accompaniment
+          </Link>
+          <Link
+            href="/contact"
+            className="transition-colors hover:text-foreground"
+          >
+            Contact
           </Link>
           <a
             href={youtubeUrl}
