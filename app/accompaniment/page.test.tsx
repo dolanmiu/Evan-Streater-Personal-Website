@@ -16,9 +16,6 @@ describe("AccompanimentPage", () => {
     render(<AccompanimentPage />);
 
     expect(
-      screen.getByText(/exams, auditions, recitals, and performances/i)
-    ).toBeInTheDocument();
-    expect(
       screen.getByRole("link", { name: "Discuss your accompaniment needs" })
     ).toHaveAttribute("href", "/contact");
   });

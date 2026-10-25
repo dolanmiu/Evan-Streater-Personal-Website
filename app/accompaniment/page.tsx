@@ -3,8 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Accompaniment",
-  description:
-    "Piano accompaniment for exams, auditions, and performances by Evan Streater.",
+  description: "Professional piano accompaniment by Evan Streater.",
 };
 
 function Kicker({ children }: { children: React.ReactNode }) {
@@ -33,44 +32,14 @@ export default function AccompanimentPage() {
 
       <section>
         <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-          <div className="flex max-w-3xl flex-col gap-12">
-            <div className="flex flex-col gap-6">
-              <h2 className="font-serif text-3xl leading-tight md:text-4xl">
-                Exams & auditions
-              </h2>
-              <p className="leading-relaxed text-muted">
-                Accompaniment for graded music exams, conservatory auditions,
-                and competitions. I work with instrumentalists and singers to
-                ensure a confident, well-rehearsed performance on the day.
-              </p>
-            </div>
-            <div className="flex flex-col gap-6">
-              <h2 className="font-serif text-3xl leading-tight md:text-4xl">
-                Recitals & performances
-              </h2>
-              <p className="leading-relaxed text-muted">
-                From student recitals to professional concerts, I provide
-                tasteful, responsive accompaniment shaped around your repertoire
-                and interpretation.
-              </p>
-            </div>
-            <div className="flex flex-col gap-6">
-              <h2 className="font-serif text-3xl leading-tight md:text-4xl">
-                Rehearsals
-              </h2>
-              <p className="leading-relaxed text-muted">
-                Regular rehearsal sessions available to prepare your program,
-                work on ensemble balance, and build confidence before stepping
-                on stage.
-              </p>
-            </div>
+          <div className="flex flex-col items-start gap-12">
+            <Link
+              href="/contact"
+              className="border border-accent bg-accent px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-transparent hover:text-accent"
+            >
+              Discuss your accompaniment needs
+            </Link>
           </div>
-          <Link
-            href="/contact"
-            className="border border-accent bg-accent px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-transparent hover:text-accent"
-          >
-            Discuss your accompaniment needs
-          </Link>
         </div>
       </section>
     </>
