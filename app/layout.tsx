@@ -38,7 +38,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">
+      <body className="min-h-full flex flex-col bg-background text-foreground bg-[url('/images/hero-piano.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
