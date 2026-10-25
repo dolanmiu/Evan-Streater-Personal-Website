@@ -16,6 +16,13 @@ describe("AccompanimentPage", () => {
     render(<AccompanimentPage />);
 
     expect(
+      screen.getByText(/over 20 years of experience/i)
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(/best soloists and chamber musicians/i)
+    ).toBeInTheDocument();
+    expect(screen.getByText(/USD\$150 per hour/i)).toBeInTheDocument();
+    expect(
       screen.getByRole("link", { name: "Discuss your accompaniment needs" })
     ).toHaveAttribute("href", "/contact");
   });

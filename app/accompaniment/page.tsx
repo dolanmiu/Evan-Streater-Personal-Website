@@ -24,8 +24,12 @@ export default function AccompanimentPage() {
             Piano Accompaniment
           </h1>
           <p className="max-w-xl leading-relaxed text-muted">
-            Professional piano accompaniment for exams, auditions, recitals, and
-            performances. Sensitive, reliable, and attentive to the soloist.
+            Professional piano accompaniment by Evan Streater. With over 20
+            years of experience performing alongside some of Australia&apos;s
+            best soloists and chamber musicians, I bring sensitivity,
+            reliability, and attentive musicianship to every collaboration.
+            Starting at USD$150 per hour, with additional costs for travel and
+            difficult repertoire.
           </p>
         </div>
       </section>
