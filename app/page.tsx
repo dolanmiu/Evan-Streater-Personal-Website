@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { recordings, youtubeUrl } from "@/lib/content";
 
@@ -14,24 +15,38 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="border-b border-line">
-        <div className="mx-auto flex max-w-6xl flex-col items-start gap-8 px-6 py-24 md:py-36">
-          <Kicker>Pianist · Collaborator · Composer</Kicker>
-          <h1 className="font-serif text-5xl leading-[1.05] tracking-tight md:text-7xl">
-            Evan Streater
-          </h1>
-          <div className="flex flex-wrap gap-4">
-            <Link
-              href="/lessons"
-              className="border border-accent bg-accent px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-transparent hover:text-accent"
-            >
-              Book a Lesson
-            </Link>
-            <Link
-              href="/contact"
-              className="border border-line-strong px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
-            >
-              Book a Performance
-            </Link>
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-36">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12">
+            <div className="flex-1 flex flex-col gap-6">
+              <Kicker>Pianist · Collaborator · Composer</Kicker>
+              <h1 className="font-serif text-5xl leading-[1.05] tracking-tight md:text-7xl">
+                Evan Streater
+              </h1>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  href="/lessons"
+                  className="border border-accent bg-accent px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-transparent hover:text-accent"
+                >
+                  Book a Lesson
+                </Link>
+                <Link
+                  href="/contact"
+                  className="border border-line-strong px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
+                >
+                  Book a Performance
+                </Link>
+              </div>
+            </div>
+            <div className="flex-1">
+              <Image
+                src="/images/hero-piano.jpg"
+                alt="Evan Streater playing piano"
+                className="w-full h-auto rounded-lg shadow-lg"
+                width={800}
+                height={800}
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
