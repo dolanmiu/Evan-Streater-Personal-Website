@@ -40,7 +40,7 @@ export default function HomePage() {
       </section>
 
       {/* Recordings */}
-      <section className="border-b border-line bg-white/5">
+      <section className="border-b border-line bg-background">
         <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div className="flex flex-col gap-4">
@@ -89,7 +89,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact CTA */}
-      <section className="border-b border-line bg-white/5">
+      <section className="border-b border-line bg-background">
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-8 px-6 py-20 md:py-28">
           <Kicker>Engagement</Kicker>
           <h2 className="max-w-2xl font-serif text-3xl leading-tight md:text-4xl">
@@ -109,7 +109,7 @@ export default function HomePage() {
       </section>
 
       {/* Concerts */}
-      <section className="border-b border-line bg-white/5">
+      <section className="border-b border-line bg-background">
         <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-20 md:py-28">
           <Kicker>Concerts</Kicker>
           <div className="border border-line bg-surface p-8 md:p-12">
