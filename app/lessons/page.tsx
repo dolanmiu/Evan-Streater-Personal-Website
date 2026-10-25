@@ -83,6 +83,7 @@ export default function LessonsPage() {
               single lesson is an open invitation to dive into the music
               together and refine your current repertoire.
             </p>
+            <p className="leading-relaxed text-muted">USD$120 per lesson</p>
             <Link
               href="/contact"
               className="border border-accent bg-accent px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-transparent hover:text-accent"
@@ -102,9 +103,22 @@ export default function LessonsPage() {
             </h2>
             <p className="leading-relaxed text-muted">
               For ongoing study, lesson bundles pair regular sessions with a
-              plan shaped around your goals and repertoire. Get in touch to put
-              together a bundle that fits your routine.
+              plan shaped around your goals and repertoire.
             </p>
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="flex flex-col gap-6 border border-line bg-surface p-8">
+                <h3 className="font-serif text-2xl">5 Lessons</h3>
+                <p className="leading-relaxed text-muted">
+                  USD$550 (USD$110 per lesson)
+                </p>
+              </div>
+              <div className="flex flex-col gap-6 border border-line bg-surface p-8">
+                <h3 className="font-serif text-2xl">10 Lessons</h3>
+                <p className="leading-relaxed text-muted">
+                  USD$1000 (USD$100 per lesson)
+                </p>
+              </div>
+            </div>
             <Link
               href="/contact"
               className="border border-line-strong px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
