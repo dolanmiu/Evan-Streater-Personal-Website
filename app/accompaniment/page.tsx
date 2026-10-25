@@ -28,7 +28,7 @@ export default function AccompanimentPage() {
             years of experience performing alongside some of Australia&apos;s
             best soloists and chamber musicians, I bring sensitivity,
             reliability, and attentive musicianship to every collaboration.
-            Starting at USD$150 per hour, with additional costs for travel and
+            Starting at AUD$150 per hour, with additional costs for travel and
             difficult repertoire.
           </p>
         </div>
