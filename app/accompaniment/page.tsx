@@ -24,12 +24,11 @@ export default function AccompanimentPage() {
             Piano Accompaniment
           </h1>
           <p className="max-w-xl leading-relaxed text-muted">
-            Professional piano accompaniment by Evan Streater. With over 20
-            years of experience performing alongside some of Australia&apos;s
-            best soloists and chamber musicians, I bring reliability, attentive
-            musicianship and a wealth of educational expertise to every
-            collaboration. Starting at AUD$150 per hour, with additional costs
-            for travel and advanced repertoire preparation.
+            With over 20 years of experience performing alongside some of
+            Australia&apos;s best soloists and chamber musicians, I bring
+            reliability, attentive musicianship and a wealth of educational
+            expertise to every collaboration. Starting at AUD$150 per hour, with
+            additional costs for travel and advanced repertoire preparation.
           </p>
         </div>
       </section>
