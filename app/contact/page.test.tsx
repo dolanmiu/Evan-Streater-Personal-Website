@@ -3,15 +3,15 @@ import { describe, expect, it } from "vitest";
 import ContactPage from "./page";
 
 describe("ContactPage", () => {
-  it("renders the booking heading and intro", () => {
+  it("renders the contact heading and intro", () => {
     render(<ContactPage />);
 
     expect(screen.getByText("Contact")).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { level: 1, name: "Book a Performance" })
+      screen.getByRole("heading", { level: 1, name: "Get in Touch" })
     ).toBeInTheDocument();
     expect(
-      screen.getByText(/For presenters, ensembles, and venues/i)
+      screen.getByText(/lesson inquiries, accompaniment/i)
     ).toBeInTheDocument();
   });
 

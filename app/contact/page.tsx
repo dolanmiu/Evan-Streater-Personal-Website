@@ -20,11 +20,12 @@ export default function ContactPage() {
         <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-20 md:py-28">
           <Kicker>Contact</Kicker>
           <h1 className="font-serif text-4xl leading-tight md:text-5xl">
-            Book a Performance
+            Get in Touch
           </h1>
           <p className="max-w-xl leading-relaxed text-muted">
-            For presenters, ensembles, and venues. Please include proposed
-            dates, venue details, and programming interests.
+            For lesson inquiries, accompaniment requests, or performance
+            bookings. Please include your details and what you&apos;d like to
+            discuss.
           </p>
         </div>
       </section>
