@@ -27,8 +27,10 @@ export default function LessonsPage() {
             Piano Lessons
           </h1>
           <p className="max-w-xl leading-relaxed text-muted">
-            One-on-one lessons for pianists who want a fresh perspective — on
-            technique, repertoire, or interpretation.
+            One-on-one piano lessons for pianists seeking new insight into
+            technique, repertoire, or interpretation — guided by over 20 years
+            of teaching experience, so you can feel confident you&apos;re in
+            good hands.
           </p>
           <button
             data-cal-link="evanstreater/lesson"

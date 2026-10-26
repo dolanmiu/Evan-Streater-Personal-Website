@@ -14,11 +14,13 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative border-b border-line">
-        <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 mx-auto max-w-6xl px-6 py-24 md:py-36">
           <div className="flex flex-col gap-6">
             <Kicker>Pianist · Collaborator · Composer</Kicker>
-            <h1 className="font-serif text-5xl leading-[1.05] tracking-tight md:text-7xl text-white">
+            <h1
+              className="font-serif text-5xl leading-[1.05] tracking-tight md:text-7xl text-white"
+              style={{ textShadow: "0 2px 4px rgba(0,0,0,0.8)" }}
+            >
               Evan Streater
             </h1>
             <div className="flex flex-wrap gap-4">
