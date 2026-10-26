@@ -26,30 +26,27 @@ describe("LessonsPage", () => {
     );
   });
 
-  it("links the overview cards to the single and bundle sections", () => {
+  it("displays single lessons and lesson bundles with pricing", () => {
     render(<LessonsPage />);
 
-    const moreLinks = screen.getAllByRole("link", { name: "More →" });
-    expect(moreLinks).toHaveLength(2);
-    expect(moreLinks[0]).toHaveAttribute("href", "#single");
-    expect(moreLinks[1]).toHaveAttribute("href", "#bundles");
+    expect(
+      screen.getByRole("heading", { level: 2, name: "Single Lessons" })
+    ).toBeInTheDocument();
+    expect(screen.getByText("USD$120 per lesson")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { level: 2, name: "Lesson Bundles" })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText("USD$550 (USD$110 per lesson)")
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText("USD$1000 (USD$100 per lesson)")
+    ).toBeInTheDocument();
   });
 
-  it("describes single lessons and bundles with booking links", () => {
+  it("links single lessons and bundles booking to contact page", () => {
     render(<LessonsPage />);
 
-    expect(
-      screen.getByRole("heading", {
-        level: 2,
-        name: "A fresh perspective on your playing.",
-      })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", {
-        level: 2,
-        name: "Commit to your musical growth.",
-      })
-    ).toBeInTheDocument();
     expect(
       screen.getByRole("link", { name: "Get in touch to book" })
     ).toHaveAttribute("href", "/contact");

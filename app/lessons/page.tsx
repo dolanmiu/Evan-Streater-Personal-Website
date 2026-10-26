@@ -45,45 +45,10 @@ export default function LessonsPage() {
 
       <section className="border-b border-line">
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:grid-cols-2 md:py-20">
-          <div className="flex flex-col gap-4 border border-line bg-surface p-8">
+          <div className="flex flex-col gap-6 border border-line bg-surface p-8">
             <h2 className="font-serif text-2xl">Single Lessons</h2>
             <p className="text-sm leading-relaxed text-muted">
               A one-off lesson focused on your repertoire and questions.
-            </p>
-            <a
-              href="#single"
-              className="text-sm font-medium text-accent transition-colors hover:text-foreground"
-            >
-              More →
-            </a>
-          </div>
-          <div className="flex flex-col gap-4 border border-line bg-surface p-8">
-            <h2 className="font-serif text-2xl">Lesson Bundles</h2>
-            <p className="text-sm leading-relaxed text-muted">
-              Regular lessons with a plan shaped around your goals.
-            </p>
-            <a
-              href="#bundles"
-              className="text-sm font-medium text-accent transition-colors hover:text-foreground"
-            >
-              More →
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="single" className="scroll-mt-24 border-b border-line">
-        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-[1fr_2fr] md:py-24">
-          <Kicker>Single Lessons</Kicker>
-          <div className="flex flex-col items-start gap-6">
-            <h2 className="font-serif text-3xl leading-tight md:text-4xl">
-              A fresh perspective on your playing.
-            </h2>
-            <p className="leading-relaxed text-muted">
-              Sometimes all it takes is a new perspective to overcome a
-              technical hurdle or to unlock the emotional core of a piece. A
-              single lesson is an open invitation to dive into the music
-              together and refine your current repertoire.
             </p>
             <p className="leading-relaxed text-muted">USD$120 per lesson</p>
             <Link
@@ -93,29 +58,21 @@ export default function LessonsPage() {
               Get in touch to book
             </Link>
           </div>
-        </div>
-      </section>
-
-      <section id="bundles" className="scroll-mt-24 border-b border-line">
-        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-[1fr_2fr] md:py-24">
-          <Kicker>Lesson Bundles</Kicker>
-          <div className="flex flex-col items-start gap-6">
-            <h2 className="font-serif text-3xl leading-tight md:text-4xl">
-              Commit to your musical growth.
-            </h2>
-            <p className="leading-relaxed text-muted">
-              For ongoing study, lesson bundles pair regular sessions with a
-              plan shaped around your goals and repertoire.
+          <div className="flex flex-col gap-6 border border-line bg-surface p-8">
+            <h2 className="font-serif text-2xl">Lesson Bundles</h2>
+            <p className="text-sm leading-relaxed text-muted">
+              Regular lessons with a plan shaped around your goals and
+              repertoire.
             </p>
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="flex flex-col gap-6 border border-line bg-surface p-8">
-                <h3 className="font-serif text-2xl">5 Lessons</h3>
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2">
+                <h3 className="font-serif text-xl">5 Lessons</h3>
                 <p className="leading-relaxed text-muted">
                   USD$550 (USD$110 per lesson)
                 </p>
               </div>
-              <div className="flex flex-col gap-6 border border-line bg-surface p-8">
-                <h3 className="font-serif text-2xl">10 Lessons</h3>
+              <div className="flex flex-col gap-2">
+                <h3 className="font-serif text-xl">10 Lessons</h3>
                 <p className="leading-relaxed text-muted">
                   USD$1000 (USD$100 per lesson)
                 </p>
